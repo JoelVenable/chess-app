@@ -1,10 +1,12 @@
 module.exports.buildDOMElement = function (tagName, parentElement, id, classArray, attributesObject) {
   let element = document.createElement(tagName);
   if (id) element.id = id;
-  if (classArray.length > 0) {
+  try {
     classArray.forEach(cls => {
-      element.classList.add(cls)
+      element.classList.add(cls);
     });
+  } catch (e) {
+    console.log("No arguments passed to classArray");
   }
   if (attributesObject) {
     for (const key of Object.keys(attributesObject)) {
@@ -12,4 +14,4 @@ module.exports.buildDOMElement = function (tagName, parentElement, id, classArra
     }
   }
   return parentElement.appendChild(element);
-}
+};

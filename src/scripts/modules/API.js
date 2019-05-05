@@ -2,7 +2,7 @@ const myDB = "http://localhost:8088";
 
 
 module.exports.API = {
-  boards: Endpoint(`${myDB}/boards`)
+  games: new Endpoint(`${myDB}/games`)
 };
 
 
