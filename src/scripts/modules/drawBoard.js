@@ -42,6 +42,6 @@ function makeSquare(i, j, parentRow) {
     `square--${i}--${j}`,
     ["square", `square-${squareColor}`]);
   let inner = buildDOMElement("div", square, null, ["square-inner"]);
-  inner.innerHTML = "k"; //`x: ${i}<br>y: ${j}`;
+  inner.innerHTML = ""; //`x: ${i}<br>y: ${j}`;
   return square;
 }

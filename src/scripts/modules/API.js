@@ -45,10 +45,7 @@ function Endpoint(url) {
   };
   this.delete = (id) => {
     return fetch(`${url}/${id}`, {
-      method: "DELETE",
-      headers: {
-        "Content-Type": "application/json"
-      }
+
     });
   };
 

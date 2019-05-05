@@ -1,12 +1,12 @@
 import {
   API
 } from "./API";
+import {
+  placePieces
+} from "./placePieces";
 
 
-API.games.create(makeNewGameData())
-  .then(game => console.log(game));
-
-function makeNewGameData(id) {
+module.exports.makeNewGameData = function () {
   //  Place white pieces
   let newGame = {
     "turnColor": "white",

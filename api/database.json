@@ -1,175 +1,354 @@
 {
-  "games": [{
-    "turnColor": "white",
-    "turnNumber": 1,
-    "whitePieces": [{
-        "type": "pn",
-        "x": 6,
-        "y": 0
-      },
-      {
-        "type": "pn",
-        "x": 6,
-        "y": 1
-      },
-      {
-        "type": "pn",
-        "x": 6,
-        "y": 2
-      },
-      {
-        "type": "pn",
-        "x": 6,
-        "y": 3
-      },
-      {
-        "type": "pn",
-        "x": 6,
-        "y": 4
-      },
-      {
-        "type": "pn",
-        "x": 6,
-        "y": 5
-      },
-      {
-        "type": "pn",
-        "x": 6,
-        "y": 6
-      },
-      {
-        "type": "pn",
-        "x": 6,
-        "y": 7
-      },
-      {
-        "type": "rk",
-        "moved": false,
-        "x": 7,
-        "y": 0
-      },
-      {
-        "type": "kn",
-        "x": 7,
-        "y": 1
-      },
-      {
-        "type": "bi",
-        "x": 7,
-        "y": 2
-      },
-      {
-        "type": "qn",
-        "x": 7,
-        "y": 3
-      },
-      {
-        "type": "ki",
-        "x": 7,
-        "y": 4,
-        "moved": false
-      },
-      {
-        "type": "bi",
-        "x": 7,
-        "y": 5
-      },
-      {
-        "type": "kn",
-        "x": 7,
-        "y": 6
-      },
-      {
-        "type": "rk",
-        "moved": false,
-        "x": 7,
-        "y": 7
-      }
-    ],
-    "blackPieces": [{
-        "type": "pn",
-        "x": 1,
-        "y": 0
-      },
-      {
-        "type": "pn",
-        "x": 1,
-        "y": 1
-      },
-      {
-        "type": "pn",
-        "x": 1,
-        "y": 2
-      },
-      {
-        "type": "pn",
-        "x": 1,
-        "y": 3
-      },
-      {
-        "type": "pn",
-        "x": 1,
-        "y": 4
-      },
-      {
-        "type": "pn",
-        "x": 1,
-        "y": 5
-      },
-      {
-        "type": "pn",
-        "x": 1,
-        "y": 6
-      },
-      {
-        "type": "pn",
-        "x": 1,
-        "y": 7
-      },
-      {
-        "type": "rk",
-        "moved": false,
-        "x": 0,
-        "y": 0
-      },
-      {
-        "type": "kn",
-        "x": 0,
-        "y": 1
-      },
-      {
-        "type": "bi",
-        "x": 0,
-        "y": 2
-      },
-      {
-        "type": "qn",
-        "x": 0,
-        "y": 3
-      },
-      {
-        "type": "ki",
-        "x": 0,
-        "y": 4,
-        "moved": false
-      },
-      {
-        "type": "bi",
-        "x": 0,
-        "y": 5
-      },
-      {
-        "type": "kn",
-        "x": 0,
-        "y": 6
-      },
-      {
-        "type": "rk",
-        "moved": false,
-        "x": 0,
-        "y": 7
-      }
-    ],
-    "id": 1
-  }]
+  "games": [
+    {
+      "turnColor": "white",
+      "turnNumber": 1,
+      "whitePieces": [
+        {
+          "type": "pn",
+          "x": 6,
+          "y": 0
+        },
+        {
+          "type": "pn",
+          "x": 6,
+          "y": 1
+        },
+        {
+          "type": "pn",
+          "x": 6,
+          "y": 2
+        },
+        {
+          "type": "pn",
+          "x": 6,
+          "y": 3
+        },
+        {
+          "type": "pn",
+          "x": 6,
+          "y": 4
+        },
+        {
+          "type": "pn",
+          "x": 6,
+          "y": 5
+        },
+        {
+          "type": "pn",
+          "x": 6,
+          "y": 6
+        },
+        {
+          "type": "pn",
+          "x": 6,
+          "y": 7
+        },
+        {
+          "type": "rk",
+          "moved": false,
+          "x": 7,
+          "y": 0
+        },
+        {
+          "type": "kn",
+          "x": 7,
+          "y": 1
+        },
+        {
+          "type": "bi",
+          "x": 7,
+          "y": 2
+        },
+        {
+          "type": "qn",
+          "x": 7,
+          "y": 3
+        },
+        {
+          "type": "ki",
+          "x": 7,
+          "y": 4,
+          "moved": false
+        },
+        {
+          "type": "bi",
+          "x": 7,
+          "y": 5
+        },
+        {
+          "type": "kn",
+          "x": 7,
+          "y": 6
+        },
+        {
+          "type": "rk",
+          "moved": false,
+          "x": 7,
+          "y": 7
+        }
+      ],
+      "blackPieces": [
+        {
+          "type": "pn",
+          "x": 1,
+          "y": 0
+        },
+        {
+          "type": "pn",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "type": "pn",
+          "x": 1,
+          "y": 2
+        },
+        {
+          "type": "pn",
+          "x": 1,
+          "y": 3
+        },
+        {
+          "type": "pn",
+          "x": 1,
+          "y": 4
+        },
+        {
+          "type": "pn",
+          "x": 1,
+          "y": 5
+        },
+        {
+          "type": "pn",
+          "x": 1,
+          "y": 6
+        },
+        {
+          "type": "pn",
+          "x": 1,
+          "y": 7
+        },
+        {
+          "type": "rk",
+          "moved": false,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "type": "kn",
+          "x": 0,
+          "y": 1
+        },
+        {
+          "type": "bi",
+          "x": 0,
+          "y": 2
+        },
+        {
+          "type": "qn",
+          "x": 0,
+          "y": 3
+        },
+        {
+          "type": "ki",
+          "x": 0,
+          "y": 4,
+          "moved": false
+        },
+        {
+          "type": "bi",
+          "x": 0,
+          "y": 5
+        },
+        {
+          "type": "kn",
+          "x": 0,
+          "y": 6
+        },
+        {
+          "type": "rk",
+          "moved": false,
+          "x": 0,
+          "y": 7
+        }
+      ],
+      "id": 1
+    },
+    {
+      "turnColor": "white",
+      "turnNumber": 1,
+      "whitePieces": [
+        {
+          "type": "pn",
+          "x": 6,
+          "y": 0
+        },
+        {
+          "type": "pn",
+          "x": 6,
+          "y": 1
+        },
+        {
+          "type": "pn",
+          "x": 6,
+          "y": 2
+        },
+        {
+          "type": "pn",
+          "x": 6,
+          "y": 3
+        },
+        {
+          "type": "pn",
+          "x": 6,
+          "y": 4
+        },
+        {
+          "type": "pn",
+          "x": 6,
+          "y": 5
+        },
+        {
+          "type": "pn",
+          "x": 6,
+          "y": 6
+        },
+        {
+          "type": "pn",
+          "x": 6,
+          "y": 7
+        },
+        {
+          "type": "rk",
+          "moved": false,
+          "x": 7,
+          "y": 0
+        },
+        {
+          "type": "kn",
+          "x": 7,
+          "y": 1
+        },
+        {
+          "type": "bi",
+          "x": 7,
+          "y": 2
+        },
+        {
+          "type": "qn",
+          "x": 7,
+          "y": 3
+        },
+        {
+          "type": "ki",
+          "x": 7,
+          "y": 4,
+          "moved": false
+        },
+        {
+          "type": "bi",
+          "x": 7,
+          "y": 5
+        },
+        {
+          "type": "kn",
+          "x": 7,
+          "y": 6
+        },
+        {
+          "type": "rk",
+          "moved": false,
+          "x": 7,
+          "y": 7
+        }
+      ],
+      "blackPieces": [
+        {
+          "type": "pn",
+          "x": 1,
+          "y": 0
+        },
+        {
+          "type": "pn",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "type": "pn",
+          "x": 1,
+          "y": 2
+        },
+        {
+          "type": "pn",
+          "x": 1,
+          "y": 3
+        },
+        {
+          "type": "pn",
+          "x": 1,
+          "y": 4
+        },
+        {
+          "type": "pn",
+          "x": 1,
+          "y": 5
+        },
+        {
+          "type": "pn",
+          "x": 1,
+          "y": 6
+        },
+        {
+          "type": "pn",
+          "x": 1,
+          "y": 7
+        },
+        {
+          "type": "rk",
+          "moved": false,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "type": "kn",
+          "x": 0,
+          "y": 1
+        },
+        {
+          "type": "bi",
+          "x": 0,
+          "y": 2
+        },
+        {
+          "type": "qn",
+          "x": 0,
+          "y": 3
+        },
+        {
+          "type": "ki",
+          "x": 0,
+          "y": 4,
+          "moved": false
+        },
+        {
+          "type": "bi",
+          "x": 0,
+          "y": 5
+        },
+        {
+          "type": "kn",
+          "x": 0,
+          "y": 6
+        },
+        {
+          "type": "rk",
+          "moved": false,
+          "x": 0,
+          "y": 7
+        }
+      ],
+      "id": 2
+    }
+  ]
 }

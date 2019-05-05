@@ -3,4 +3,4 @@
 import {
   drawBoard
 } from "./modules/drawBoard";
-import "./modules/newGame";
+import "./modules/APIinterface";
