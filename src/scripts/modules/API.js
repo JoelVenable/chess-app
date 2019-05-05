@@ -1,18 +1,55 @@
+const myDB = "http://localhost:8088";
+
+
 module.exports.API = {
-  fetchJson: function (url, optionsObject) {
-    return fetch(url, optionsObject)
-        .then(response => response.json());
-  },
-  getLocalData: function (endpoint) {
-    return this.fetchJson(`http://localhost:8088/${endpoint}`);
-  },
-  saveLocalData: function (obj, endpoint) {
-    return this.fetchJson(`http://localhost:8088/${endpoint}`, {
-      method: "POST",
+  boards: Endpoint(`${myDB}/boards`)
+};
+
+
+function Endpoint(url) {
+  this.create = (obj) => {
+    return fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(obj)
+      })
+      .then(response => response.json());
+  };
+  this.read = (params) => {
+    let newURL = url;
+    if (params) newURL += `/${params}`;
+    return fetch(newURL)
+      .then(response => response.json());
+  };
+  this.update = (id, object) => {
+    return fetch(`${url}/${id}`, {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(object)
+      })
+      .then(response => response.json());
+  };
+  this.replace = (id, newObject) => {
+    return fetch(`${url}/${id}`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(newObject)
+      })
+      .then(response => response.json());
+  };
+  this.delete = (id) => {
+    return fetch(`${url}/${id}`, {
+      method: "DELETE",
       headers: {
         "Content-Type": "application/json"
-      },
-      body: JSON.stringify(obj)
+      }
     });
-  }
-};
+  };
+
+}
