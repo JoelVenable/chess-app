@@ -4,3 +4,4 @@ import {
   drawBoard
 } from "./modules/drawBoard";
 import "./modules/APIinterface";
+import "./modules/clickHandler";
