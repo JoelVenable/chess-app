@@ -10,7 +10,5 @@ import {
 
 //  Game id is stored in the board's 'data-gameid' attribute
 
-
-
 API.games.read(1)
   .then(placePieces);
