@@ -60,21 +60,21 @@
         },
         {
           "type": "kn",
+          "moved": false,
           "x": 7,
-          "y": 1,
-          "moved": false
+          "y": 1
         },
         {
           "type": "bi",
+          "moved": false,
           "x": 7,
-          "y": 2,
-          "moved": false
+          "y": 2
         },
         {
           "type": "qn",
+          "moved": false,
           "x": 7,
-          "y": 3,
-          "moved": false
+          "y": 3
         },
         {
           "type": "ki",
@@ -84,15 +84,15 @@
         },
         {
           "type": "bi",
+          "moved": false,
           "x": 7,
-          "y": 5,
-          "moved": false
+          "y": 5
         },
         {
           "type": "kn",
+          "moved": false,
           "x": 7,
-          "y": 6,
-          "moved": false
+          "y": 6
         },
         {
           "type": "rk",
@@ -158,196 +158,19 @@
         },
         {
           "type": "kn",
-          "x": 0,
-          "y": 1,
-          "moved": false
-        },
-        {
-          "type": "bi",
-          "x": 0,
-          "y": 2,
-          "moved": false
-        },
-        {
-          "type": "qn",
-          "x": 0,
-          "y": 3,
-          "moved": false
-        },
-        {
-          "type": "ki",
-          "x": 0,
-          "y": 4,
-          "moved": false
-        },
-        {
-          "type": "bi",
-          "x": 0,
-          "y": 5,
-          "moved": false
-        },
-        {
-          "type": "kn",
-          "x": 0,
-          "y": 6,
-          "moved": false
-        },
-        {
-          "type": "rk",
           "moved": false,
-          "x": 0,
-          "y": 7
-        }
-      ],
-      "id": 1
-    },
-    {
-      "turnColor": "white",
-      "turnNumber": 1,
-      "whitePieces": [
-        {
-          "type": "pn",
-          "x": 6,
-          "y": 0
-        },
-        {
-          "type": "pn",
-          "x": 6,
-          "y": 1
-        },
-        {
-          "type": "pn",
-          "x": 6,
-          "y": 2
-        },
-        {
-          "type": "pn",
-          "x": 6,
-          "y": 3
-        },
-        {
-          "type": "pn",
-          "x": 6,
-          "y": 4
-        },
-        {
-          "type": "pn",
-          "x": 6,
-          "y": 5
-        },
-        {
-          "type": "pn",
-          "x": 6,
-          "y": 6
-        },
-        {
-          "type": "pn",
-          "x": 6,
-          "y": 7
-        },
-        {
-          "type": "rk",
-          "moved": false,
-          "x": 7,
-          "y": 0
-        },
-        {
-          "type": "kn",
-          "x": 7,
-          "y": 1
-        },
-        {
-          "type": "bi",
-          "x": 7,
-          "y": 2
-        },
-        {
-          "type": "qn",
-          "x": 7,
-          "y": 3
-        },
-        {
-          "type": "ki",
-          "x": 7,
-          "y": 4,
-          "moved": false
-        },
-        {
-          "type": "bi",
-          "x": 7,
-          "y": 5
-        },
-        {
-          "type": "kn",
-          "x": 7,
-          "y": 6
-        },
-        {
-          "type": "rk",
-          "moved": false,
-          "x": 7,
-          "y": 7
-        }
-      ],
-      "blackPieces": [
-        {
-          "type": "pn",
-          "x": 1,
-          "y": 0
-        },
-        {
-          "type": "pn",
-          "x": 1,
-          "y": 1
-        },
-        {
-          "type": "pn",
-          "x": 1,
-          "y": 2
-        },
-        {
-          "type": "pn",
-          "x": 1,
-          "y": 3
-        },
-        {
-          "type": "pn",
-          "x": 1,
-          "y": 4
-        },
-        {
-          "type": "pn",
-          "x": 1,
-          "y": 5
-        },
-        {
-          "type": "pn",
-          "x": 1,
-          "y": 6
-        },
-        {
-          "type": "pn",
-          "x": 1,
-          "y": 7
-        },
-        {
-          "type": "rk",
-          "moved": false,
-          "x": 0,
-          "y": 0
-        },
-        {
-          "type": "kn",
           "x": 0,
           "y": 1
         },
         {
           "type": "bi",
+          "moved": false,
           "x": 0,
           "y": 2
         },
         {
           "type": "qn",
+          "moved": false,
           "x": 0,
           "y": 3
         },
@@ -359,11 +182,13 @@
         },
         {
           "type": "bi",
+          "moved": false,
           "x": 0,
           "y": 5
         },
         {
           "type": "kn",
+          "moved": false,
           "x": 0,
           "y": 6
         },
@@ -374,7 +199,7 @@
           "y": 7
         }
       ],
-      "id": 2
+      "id": 1
     }
   ]
 }

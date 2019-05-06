@@ -18,12 +18,14 @@ module.exports.makeNewGameData = function () {
     newGame.whitePieces.push({
       type: "pn",
       x: 6,
-      y: i
+      y: i,
+      moved: false
     });
     newGame.blackPieces.push({
       type: "pn",
       x: 1,
-      y: i
+      y: i,
+      moved: false
     });
   }
   newGame.whitePieces.push(...backRowPieces(7));
@@ -44,16 +46,19 @@ function backRowPieces(x) {
     },
     {
       type: "kn",
+      moved: false,
       x: x,
       y: 1
     },
     {
       type: "bi",
+      moved: false,
       x: x,
       y: 2
     },
     {
       type: "qn",
+      moved: false,
       x: x,
       y: 3
     },
@@ -65,11 +70,13 @@ function backRowPieces(x) {
     },
     {
       type: "bi",
+      moved: false,
       x: x,
       y: 5
     },
     {
       type: "kn",
+      moved: false,
       x: x,
       y: 6
     }, {

@@ -18,6 +18,6 @@ function clearBoard() {
 }
 
 function setActiveSquare(squareClicked) {
-  let square = document.getElementById(`square--${squareClicked.x}--${squareClicked.y}`);
+  let square = document.getElementById(squareClicked);
   square.classList.add("active");
 }
