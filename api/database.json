@@ -28,9 +28,9 @@
       },
       {
         "type": "pn",
-        "x": 6,
+        "x": 5,
         "y": 4,
-        "moved": false
+        "moved": true
       },
       {
         "type": "pn",
