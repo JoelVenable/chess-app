@@ -16,11 +16,6 @@
     "quotes": ["error", "double"],
     "eqeqeq": 1,
     "no-trailing-spaces": 2,
-<<<<<<< HEAD
-    "dot-location": 1,
-    "yoda": 1
-=======
     "dot-location": [1, "property"]
->>>>>>> eslint-fixes
   }
 }
