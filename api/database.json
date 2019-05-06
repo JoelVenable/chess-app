@@ -7,42 +7,50 @@
         {
           "type": "pn",
           "x": 6,
-          "y": 0
+          "y": 0,
+          "moved": false
         },
         {
           "type": "pn",
           "x": 6,
-          "y": 1
+          "y": 1,
+          "moved": false
         },
         {
           "type": "pn",
           "x": 6,
-          "y": 2
+          "y": 2,
+          "moved": false
         },
         {
           "type": "pn",
           "x": 6,
-          "y": 3
+          "y": 3,
+          "moved": false
         },
         {
           "type": "pn",
           "x": 6,
-          "y": 4
+          "y": 4,
+          "moved": false
         },
         {
           "type": "pn",
           "x": 6,
-          "y": 5
+          "y": 5,
+          "moved": false
         },
         {
           "type": "pn",
           "x": 6,
-          "y": 6
+          "y": 6,
+          "moved": false
         },
         {
           "type": "pn",
           "x": 6,
-          "y": 7
+          "y": 7,
+          "moved": false
         },
         {
           "type": "rk",
@@ -53,17 +61,20 @@
         {
           "type": "kn",
           "x": 7,
-          "y": 1
+          "y": 1,
+          "moved": false
         },
         {
           "type": "bi",
           "x": 7,
-          "y": 2
+          "y": 2,
+          "moved": false
         },
         {
           "type": "qn",
           "x": 7,
-          "y": 3
+          "y": 3,
+          "moved": false
         },
         {
           "type": "ki",
@@ -74,12 +85,14 @@
         {
           "type": "bi",
           "x": 7,
-          "y": 5
+          "y": 5,
+          "moved": false
         },
         {
           "type": "kn",
           "x": 7,
-          "y": 6
+          "y": 6,
+          "moved": false
         },
         {
           "type": "rk",
@@ -92,42 +105,50 @@
         {
           "type": "pn",
           "x": 1,
-          "y": 0
+          "y": 0,
+          "moved": false
         },
         {
           "type": "pn",
           "x": 1,
-          "y": 1
+          "y": 1,
+          "moved": false
         },
         {
           "type": "pn",
           "x": 1,
-          "y": 2
+          "y": 2,
+          "moved": false
         },
         {
           "type": "pn",
           "x": 1,
-          "y": 3
+          "y": 3,
+          "moved": false
         },
         {
           "type": "pn",
           "x": 1,
-          "y": 4
+          "y": 4,
+          "moved": false
         },
         {
           "type": "pn",
           "x": 1,
-          "y": 5
+          "y": 5,
+          "moved": false
         },
         {
           "type": "pn",
           "x": 1,
-          "y": 6
+          "y": 6,
+          "moved": false
         },
         {
           "type": "pn",
           "x": 1,
-          "y": 7
+          "y": 7,
+          "moved": false
         },
         {
           "type": "rk",
@@ -138,17 +159,20 @@
         {
           "type": "kn",
           "x": 0,
-          "y": 1
+          "y": 1,
+          "moved": false
         },
         {
           "type": "bi",
           "x": 0,
-          "y": 2
+          "y": 2,
+          "moved": false
         },
         {
           "type": "qn",
           "x": 0,
-          "y": 3
+          "y": 3,
+          "moved": false
         },
         {
           "type": "ki",
@@ -159,12 +183,14 @@
         {
           "type": "bi",
           "x": 0,
-          "y": 5
+          "y": 5,
+          "moved": false
         },
         {
           "type": "kn",
           "x": 0,
-          "y": 6
+          "y": 6,
+          "moved": false
         },
         {
           "type": "rk",

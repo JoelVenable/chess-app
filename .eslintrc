@@ -6,10 +6,16 @@
       "jsx": true
     }
   },
+  "env": {
+    "browser": true,
+    "node": true,
+    "commonjs": true
+  },
   "rules": {
     "semi": 1,
-    "quotes": ["error","double"],
+    "quotes": ["error", "double"],
     "eqeqeq": 1,
-    "no-trailing-spaces": 2
+    "no-trailing-spaces": 2,
+    "dot-location": [1, "property"]
   }
 }
