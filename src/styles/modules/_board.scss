@@ -17,20 +17,37 @@
   height: 50px;
   border: 1px solid black;
 
+
+
+  &.active {
+    background-color: lime;
+  }
+
   &-black {
     background-color: #666;
+
+    &.active {
+      background-color: green;
+    }
   }
 
 
 }
 
+.available {
+  background-color: orange;
+
+  &.occupied {
+    background-color: red;
+  }
+}
+
+
+
 .square-inner {
   margin: auto;
 }
 
-.active {
-  background-color: green;
-}
 
 
 /*  Need classes for selected piece, and allowable moves  */
