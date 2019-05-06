@@ -11,6 +11,7 @@ function placePiece(piece, index, color) {
   const innerDiv = square.querySelector("div");
   square.classList.add("occupied", `occupied--${color}`);
   square.setAttribute("data-piece", `${color}--${index}--${piece.type}`);
+  square.setAttribute("data-hasMoved", piece.moved);
   innerDiv.innerHTML = `${piece.type}<br>${color}`;
 }
 
