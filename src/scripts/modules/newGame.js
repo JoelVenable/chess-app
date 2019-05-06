@@ -29,7 +29,7 @@ module.exports.makeNewGameData = function () {
   newGame.whitePieces.push(...backRowPieces(7));
   newGame.blackPieces.push(...backRowPieces(0));
   return newGame;
-}
+};
 
 
 
