@@ -19,13 +19,15 @@ module.exports.makeNewGameData = function () {
       type: "pn",
       x: 6,
       y: i,
-      moved: false
+      moved: false,
+      id: i
     });
     newGame.blackPieces.push({
       type: "pn",
       x: 1,
       y: i,
-      moved: false
+      moved: false,
+      id: i
     });
   }
   newGame.whitePieces.push(...backRowPieces(7));
@@ -42,48 +44,56 @@ function backRowPieces(x) {
       type: "rk",
       moved: false,
       x: x,
-      y: 0
+      y: 0,
+      id: 8
     },
     {
       type: "kn",
       moved: false,
       x: x,
-      y: 1
+      y: 1,
+      id: 9
     },
     {
       type: "bi",
       moved: false,
       x: x,
-      y: 2
+      y: 2,
+      id: 10
     },
     {
       type: "qn",
       moved: false,
       x: x,
-      y: 3
+      y: 3,
+      id: 11
     },
     {
       type: "ki",
       x: x,
       y: 4,
-      moved: false
+      moved: false,
+      id: 12
     },
     {
       type: "bi",
       moved: false,
       x: x,
-      y: 5
+      y: 5,
+      id: 13
     },
     {
       type: "kn",
       moved: false,
       x: x,
-      y: 6
+      y: 6,
+      id: 14
     }, {
       type: "rk",
       moved: false,
       x: x,
-      y: 7
+      y: 7,
+      id: 15
     }
   ];
 }

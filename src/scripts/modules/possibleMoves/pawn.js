@@ -8,7 +8,7 @@ import {
 module.exports.pawnMoves = function (pieceData) {
   // Set direction of movement
   let direction = 1;
-  if (pieceData.color = "white") direction = -1;
+  if (pieceData.color === "white") direction = -1;
   let x = pieceData.x,
     y = pieceData.y;
 
@@ -19,7 +19,6 @@ module.exports.pawnMoves = function (pieceData) {
     getSquare(x + direction, y + 1),
     getSquare(x + direction, y - 1)
   ];
-
   if (!isOccupied(squares[0])) {
     // can move forward, add square to array
     outputArray.push(squares[0]);

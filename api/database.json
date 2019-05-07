@@ -1,159 +1,936 @@
 {
-  "games": [{
-    "turnColor": "white",
-    "turnNumber": 1,
-    "whitePieces": [{
-        "type": "pn",
-        "x": 6,
-        "y": 7,
-        "moved": false
-      },
-      {
-        "type": "rk",
-        "moved": false,
-        "x": 4,
-        "y": 2
-      },
-      {
-        "type": "kn",
-        "moved": false,
-        "x": 4,
-        "y": 3
-      },
-      {
-        "type": "bi",
-        "moved": false,
-        "x": 7,
-        "y": 2
-      },
-      {
-        "type": "qn",
-        "moved": false,
-        "x": 7,
-        "y": 3
-      },
-      {
-        "type": "ki",
-        "x": 7,
-        "y": 4,
-        "moved": false
-      },
-      {
-        "type": "bi",
-        "moved": false,
-        "x": 7,
-        "y": 5
-      },
-      {
-        "type": "kn",
-        "moved": false,
-        "x": 7,
-        "y": 6
-      },
-      {
-        "type": "rk",
-        "moved": false,
-        "x": 7,
-        "y": 7
-      }
-    ],
-    "blackPieces": [{
-        "type": "pn",
-        "x": 1,
-        "y": 0,
-        "moved": false
-      },
-      {
-        "type": "pn",
-        "x": 1,
-        "y": 1,
-        "moved": false
-      },
-      {
-        "type": "pn",
-        "x": 1,
-        "y": 2,
-        "moved": false
-      },
-      {
-        "type": "pn",
-        "x": 1,
-        "y": 3,
-        "moved": false
-      },
-      {
-        "type": "pn",
-        "x": 1,
-        "y": 4,
-        "moved": false
-      },
-      {
-        "type": "pn",
-        "x": 1,
-        "y": 5,
-        "moved": false
-      },
-      {
-        "type": "pn",
-        "x": 1,
-        "y": 6,
-        "moved": false
-      },
-      {
-        "type": "pn",
-        "x": 1,
-        "y": 7,
-        "moved": false
-      },
-      {
-        "type": "rk",
-        "moved": false,
-        "x": 0,
-        "y": 0
-      },
-      {
-        "type": "kn",
-        "moved": false,
-        "x": 0,
-        "y": 1
-      },
-      {
-        "type": "bi",
-        "moved": false,
-        "x": 0,
-        "y": 2
-      },
-      {
-        "type": "qn",
-        "moved": false,
-        "x": 0,
-        "y": 3
-      },
-      {
-        "type": "ki",
-        "x": 0,
-        "y": 4,
-        "moved": false
-      },
-      {
-        "type": "bi",
-        "moved": false,
-        "x": 0,
-        "y": 5
-      },
-      {
-        "type": "kn",
-        "moved": false,
-        "x": 0,
-        "y": 6
-      },
-      {
-        "type": "rk",
-        "moved": false,
-        "x": 0,
-        "y": 7
-      }
-    ],
-    "id": 1
-  }]
+  "games": [
+    {
+      "turnColor": "white",
+      "turnNumber": 8,
+      "whitePieces": [
+        {
+          "type": "pn",
+          "x": 6,
+          "y": 0,
+          "moved": false,
+          "id": 0
+        },
+        {
+          "type": "pn",
+          "x": 6,
+          "y": 1,
+          "moved": false,
+          "id": 1
+        },
+        {
+          "type": "pn",
+          "x": 1,
+          "y": 1,
+          "moved": true,
+          "id": 2
+        },
+        {
+          "type": "pn",
+          "x": 6,
+          "y": 3,
+          "moved": false,
+          "id": 3
+        },
+        {
+          "type": "pn",
+          "x": 4,
+          "y": 4,
+          "moved": true,
+          "id": 4
+        },
+        {
+          "type": "pn",
+          "x": 4,
+          "y": 5,
+          "moved": true,
+          "id": 5
+        },
+        {
+          "type": "pn",
+          "x": 4,
+          "y": 6,
+          "moved": true,
+          "id": 6
+        },
+        {
+          "type": "pn",
+          "x": 6,
+          "y": 7,
+          "moved": false,
+          "id": 7
+        },
+        {
+          "type": "rk",
+          "moved": false,
+          "x": 7,
+          "y": 0,
+          "id": 8
+        },
+        {
+          "type": "kn",
+          "moved": false,
+          "x": 7,
+          "y": 1,
+          "id": 9
+        },
+        {
+          "type": "bi",
+          "moved": false,
+          "x": 7,
+          "y": 2,
+          "id": 10
+        },
+        {
+          "type": "qn",
+          "moved": false,
+          "x": 7,
+          "y": 3,
+          "id": 11
+        },
+        {
+          "type": "ki",
+          "x": 7,
+          "y": 4,
+          "moved": false,
+          "id": 12
+        },
+        {
+          "type": "bi",
+          "moved": false,
+          "x": 7,
+          "y": 5,
+          "id": 13
+        },
+        {
+          "type": "kn",
+          "moved": false,
+          "x": 7,
+          "y": 6,
+          "id": 14
+        },
+        {
+          "type": "rk",
+          "moved": false,
+          "x": 7,
+          "y": 7,
+          "id": 15
+        }
+      ],
+      "blackPieces": [
+        {
+          "type": "pn",
+          "x": 1,
+          "y": 0,
+          "moved": false,
+          "id": 0
+        },
+        {
+          "type": "pn",
+          "x": 3,
+          "y": 1,
+          "moved": true,
+          "id": 1
+        },
+        {
+          "type": "pn",
+          "x": 1,
+          "y": 2,
+          "moved": false,
+          "id": 2
+        },
+        {
+          "type": "pn",
+          "x": 1,
+          "y": 3,
+          "moved": false,
+          "id": 3
+        },
+        {
+          "type": "pn",
+          "x": 1,
+          "y": 4,
+          "moved": false,
+          "id": 4
+        },
+        {
+          "type": "pn",
+          "x": 1,
+          "y": 5,
+          "moved": false,
+          "id": 5
+        },
+        {
+          "type": "pn",
+          "x": 1,
+          "y": 6,
+          "moved": false,
+          "id": 6
+        },
+        {
+          "type": "pn",
+          "x": 1,
+          "y": 7,
+          "moved": false,
+          "id": 7
+        },
+        {
+          "type": "rk",
+          "moved": false,
+          "x": 0,
+          "y": 0,
+          "id": 8
+        },
+        {
+          "type": "kn",
+          "x": 4,
+          "y": 3,
+          "moved": true,
+          "id": 9
+        },
+        {
+          "type": "bi",
+          "moved": false,
+          "x": 0,
+          "y": 2,
+          "id": 10
+        },
+        {
+          "type": "qn",
+          "moved": false,
+          "x": 0,
+          "y": 3,
+          "id": 11
+        },
+        {
+          "type": "ki",
+          "x": 0,
+          "y": 4,
+          "moved": false,
+          "id": 12
+        },
+        {
+          "type": "bi",
+          "moved": false,
+          "x": 0,
+          "y": 5,
+          "id": 13
+        },
+        {
+          "type": "kn",
+          "x": 2,
+          "y": 4,
+          "moved": true,
+          "id": 14
+        },
+        {
+          "type": "rk",
+          "moved": false,
+          "x": 0,
+          "y": 7,
+          "id": 15
+        }
+      ],
+      "id": 1
+    },
+    {
+      "turnColor": "white",
+      "turnNumber": 4,
+      "whitePieces": [
+        {
+          "type": "pn",
+          "x": 6,
+          "y": 0,
+          "moved": false,
+          "id": 0
+        },
+        {
+          "type": "pn",
+          "x": 6,
+          "y": 1,
+          "moved": false,
+          "id": 1
+        },
+        {
+          "type": "pn",
+          "x": 6,
+          "y": 2,
+          "moved": false,
+          "id": 2
+        },
+        {
+          "type": "pn",
+          "x": 4,
+          "y": 3,
+          "moved": true,
+          "id": 3
+        },
+        {
+          "type": "pn",
+          "x": 6,
+          "y": 4,
+          "moved": false,
+          "id": 4
+        },
+        {
+          "type": "pn",
+          "x": 6,
+          "y": 5,
+          "moved": false,
+          "id": 5
+        },
+        {
+          "type": "pn",
+          "x": 6,
+          "y": 6,
+          "moved": false,
+          "id": 6
+        },
+        {
+          "type": "pn",
+          "x": 6,
+          "y": 7,
+          "moved": false,
+          "id": 7
+        },
+        {
+          "type": "rk",
+          "moved": false,
+          "x": 7,
+          "y": 0,
+          "id": 8
+        },
+        {
+          "type": "kn",
+          "moved": false,
+          "x": 7,
+          "y": 1,
+          "id": 9
+        },
+        {
+          "type": "bi",
+          "moved": false,
+          "x": 7,
+          "y": 2,
+          "id": 10
+        },
+        {
+          "type": "qn",
+          "x": 5,
+          "y": 3,
+          "moved": true,
+          "id": 11
+        },
+        {
+          "type": "ki",
+          "x": 7,
+          "y": 4,
+          "moved": false,
+          "id": 12
+        },
+        {
+          "type": "bi",
+          "moved": false,
+          "x": 7,
+          "y": 5,
+          "id": 13
+        },
+        {
+          "type": "kn",
+          "x": 5,
+          "y": 5,
+          "moved": true,
+          "id": 14
+        },
+        {
+          "type": "rk",
+          "moved": false,
+          "x": 7,
+          "y": 7,
+          "id": 15
+        }
+      ],
+      "blackPieces": [
+        {
+          "type": "pn",
+          "x": 1,
+          "y": 0,
+          "moved": false,
+          "id": 0
+        },
+        {
+          "type": "pn",
+          "x": 1,
+          "y": 1,
+          "moved": false,
+          "id": 1
+        },
+        {
+          "type": "pn",
+          "x": 1,
+          "y": 2,
+          "moved": false,
+          "id": 2
+        },
+        {
+          "type": "pn",
+          "x": 3,
+          "y": 3,
+          "moved": true,
+          "id": 3
+        },
+        {
+          "type": "pn",
+          "x": 1,
+          "y": 4,
+          "moved": false,
+          "id": 4
+        },
+        {
+          "type": "pn",
+          "x": 3,
+          "y": 5,
+          "moved": true,
+          "id": 5
+        },
+        {
+          "type": "pn",
+          "x": 1,
+          "y": 6,
+          "moved": false,
+          "id": 6
+        },
+        {
+          "type": "pn",
+          "x": 1,
+          "y": 7,
+          "moved": false,
+          "id": 7
+        },
+        {
+          "type": "rk",
+          "moved": false,
+          "x": 0,
+          "y": 0,
+          "id": 8
+        },
+        {
+          "type": "kn",
+          "moved": false,
+          "x": 0,
+          "y": 1,
+          "id": 9
+        },
+        {
+          "type": "bi",
+          "x": 2,
+          "y": 4,
+          "moved": true,
+          "id": 10
+        },
+        {
+          "type": "qn",
+          "moved": false,
+          "x": 0,
+          "y": 3,
+          "id": 11
+        },
+        {
+          "type": "ki",
+          "x": 0,
+          "y": 4,
+          "moved": false,
+          "id": 12
+        },
+        {
+          "type": "bi",
+          "moved": false,
+          "x": 0,
+          "y": 5,
+          "id": 13
+        },
+        {
+          "type": "kn",
+          "moved": false,
+          "x": 0,
+          "y": 6,
+          "id": 14
+        },
+        {
+          "type": "rk",
+          "moved": false,
+          "x": 0,
+          "y": 7,
+          "id": 15
+        }
+      ],
+      "id": 2
+    },
+    {
+      "turnColor": "black",
+      "turnNumber": 4,
+      "whitePieces": [
+        {
+          "type": "pn",
+          "x": 6,
+          "y": 0,
+          "moved": false,
+          "id": 0
+        },
+        {
+          "type": "pn",
+          "x": 6,
+          "y": 1,
+          "moved": false,
+          "id": 1
+        },
+        {
+          "type": "pn",
+          "x": 4,
+          "y": 2,
+          "moved": true,
+          "id": 2
+        },
+        {
+          "type": "pn",
+          "x": 6,
+          "y": 3,
+          "moved": false,
+          "id": 3
+        },
+        {
+          "type": "pn",
+          "x": 3,
+          "y": 4,
+          "moved": true,
+          "id": 4
+        },
+        {
+          "type": "pn",
+          "x": 6,
+          "y": 5,
+          "moved": false,
+          "id": 5
+        },
+        {
+          "type": "pn",
+          "x": 5,
+          "y": 6,
+          "moved": true,
+          "id": 6
+        },
+        {
+          "type": "pn",
+          "x": 6,
+          "y": 7,
+          "moved": false,
+          "id": 7
+        },
+        {
+          "type": "rk",
+          "moved": false,
+          "x": 7,
+          "y": 0,
+          "id": 8
+        },
+        {
+          "type": "kn",
+          "moved": false,
+          "x": 7,
+          "y": 1,
+          "id": 9
+        },
+        {
+          "type": "bi",
+          "moved": false,
+          "x": 7,
+          "y": 2,
+          "id": 10
+        },
+        {
+          "type": "qn",
+          "moved": false,
+          "x": 7,
+          "y": 3,
+          "id": 11
+        },
+        {
+          "type": "ki",
+          "x": 7,
+          "y": 4,
+          "moved": false,
+          "id": 12
+        },
+        {
+          "type": "bi",
+          "moved": false,
+          "x": 7,
+          "y": 5,
+          "id": 13
+        },
+        {
+          "type": "kn",
+          "moved": false,
+          "x": 7,
+          "y": 6,
+          "id": 14
+        },
+        {
+          "type": "rk",
+          "moved": false,
+          "x": 7,
+          "y": 7,
+          "id": 15
+        }
+      ],
+      "blackPieces": [
+        {
+          "type": "pn",
+          "x": 1,
+          "y": 0,
+          "moved": false,
+          "id": 0
+        },
+        {
+          "type": "pn",
+          "x": 1,
+          "y": 1,
+          "moved": false,
+          "id": 1
+        },
+        {
+          "type": "pn",
+          "x": 1,
+          "y": 2,
+          "moved": false,
+          "id": 2
+        },
+        {
+          "type": "pn",
+          "x": 1,
+          "y": 3,
+          "moved": false,
+          "id": 3
+        },
+        {
+          "type": "pn",
+          "x": 1,
+          "y": 4,
+          "moved": false,
+          "id": 4
+        },
+        {
+          "type": "pn",
+          "x": 3,
+          "y": 5,
+          "moved": true,
+          "id": 5
+        },
+        {
+          "type": "pn",
+          "x": 1,
+          "y": 6,
+          "moved": false,
+          "id": 6
+        },
+        {
+          "type": "pn",
+          "x": 1,
+          "y": 7,
+          "moved": false,
+          "id": 7
+        },
+        {
+          "type": "rk",
+          "moved": false,
+          "x": 0,
+          "y": 0,
+          "id": 8
+        },
+        {
+          "type": "kn",
+          "x": 4,
+          "y": 1,
+          "moved": true,
+          "id": 9
+        },
+        {
+          "type": "bi",
+          "moved": false,
+          "x": 0,
+          "y": 2,
+          "id": 10
+        },
+        {
+          "type": "qn",
+          "moved": false,
+          "x": 0,
+          "y": 3,
+          "id": 11
+        },
+        {
+          "type": "ki",
+          "x": 0,
+          "y": 4,
+          "moved": false,
+          "id": 12
+        },
+        {
+          "type": "bi",
+          "moved": false,
+          "x": 0,
+          "y": 5,
+          "id": 13
+        },
+        {
+          "type": "kn",
+          "moved": false,
+          "x": 0,
+          "y": 6,
+          "id": 14
+        },
+        {
+          "type": "rk",
+          "moved": false,
+          "x": 0,
+          "y": 7,
+          "id": 15
+        }
+      ],
+      "id": 3
+    },
+    {
+      "turnColor": "white",
+      "turnNumber": 1,
+      "whitePieces": [
+        {
+          "type": "pn",
+          "x": 6,
+          "y": 0,
+          "moved": false,
+          "id": 0
+        },
+        {
+          "type": "pn",
+          "x": 6,
+          "y": 1,
+          "moved": false,
+          "id": 1
+        },
+        {
+          "type": "pn",
+          "x": 6,
+          "y": 2,
+          "moved": false,
+          "id": 2
+        },
+        {
+          "type": "pn",
+          "x": 6,
+          "y": 3,
+          "moved": false,
+          "id": 3
+        },
+        {
+          "type": "pn",
+          "x": 6,
+          "y": 4,
+          "moved": false,
+          "id": 4
+        },
+        {
+          "type": "pn",
+          "x": 6,
+          "y": 5,
+          "moved": false,
+          "id": 5
+        },
+        {
+          "type": "pn",
+          "x": 6,
+          "y": 6,
+          "moved": false,
+          "id": 6
+        },
+        {
+          "type": "pn",
+          "x": 6,
+          "y": 7,
+          "moved": false,
+          "id": 7
+        },
+        {
+          "type": "rk",
+          "moved": false,
+          "x": 7,
+          "y": 0,
+          "id": 8
+        },
+        {
+          "type": "kn",
+          "moved": false,
+          "x": 7,
+          "y": 1,
+          "id": 9
+        },
+        {
+          "type": "bi",
+          "moved": false,
+          "x": 7,
+          "y": 2,
+          "id": 10
+        },
+        {
+          "type": "qn",
+          "moved": false,
+          "x": 7,
+          "y": 3,
+          "id": 11
+        },
+        {
+          "type": "ki",
+          "x": 7,
+          "y": 4,
+          "moved": false,
+          "id": 12
+        },
+        {
+          "type": "bi",
+          "moved": false,
+          "x": 7,
+          "y": 5,
+          "id": 13
+        },
+        {
+          "type": "kn",
+          "moved": false,
+          "x": 7,
+          "y": 6,
+          "id": 14
+        },
+        {
+          "type": "rk",
+          "moved": false,
+          "x": 7,
+          "y": 7,
+          "id": 15
+        }
+      ],
+      "blackPieces": [
+        {
+          "type": "pn",
+          "x": 1,
+          "y": 0,
+          "moved": false,
+          "id": 0
+        },
+        {
+          "type": "pn",
+          "x": 1,
+          "y": 1,
+          "moved": false,
+          "id": 1
+        },
+        {
+          "type": "pn",
+          "x": 1,
+          "y": 2,
+          "moved": false,
+          "id": 2
+        },
+        {
+          "type": "pn",
+          "x": 1,
+          "y": 3,
+          "moved": false,
+          "id": 3
+        },
+        {
+          "type": "pn",
+          "x": 1,
+          "y": 4,
+          "moved": false,
+          "id": 4
+        },
+        {
+          "type": "pn",
+          "x": 1,
+          "y": 5,
+          "moved": false,
+          "id": 5
+        },
+        {
+          "type": "pn",
+          "x": 1,
+          "y": 6,
+          "moved": false,
+          "id": 6
+        },
+        {
+          "type": "pn",
+          "x": 1,
+          "y": 7,
+          "moved": false,
+          "id": 7
+        },
+        {
+          "type": "rk",
+          "moved": false,
+          "x": 0,
+          "y": 0,
+          "id": 8
+        },
+        {
+          "type": "kn",
+          "moved": false,
+          "x": 0,
+          "y": 1,
+          "id": 9
+        },
+        {
+          "type": "bi",
+          "moved": false,
+          "x": 0,
+          "y": 2,
+          "id": 10
+        },
+        {
+          "type": "qn",
+          "moved": false,
+          "x": 0,
+          "y": 3,
+          "id": 11
+        },
+        {
+          "type": "ki",
+          "x": 0,
+          "y": 4,
+          "moved": false,
+          "id": 12
+        },
+        {
+          "type": "bi",
+          "moved": false,
+          "x": 0,
+          "y": 5,
+          "id": 13
+        },
+        {
+          "type": "kn",
+          "moved": false,
+          "x": 0,
+          "y": 6,
+          "id": 14
+        },
+        {
+          "type": "rk",
+          "moved": false,
+          "x": 0,
+          "y": 7,
+          "id": 15
+        }
+      ],
+      "id": 4
+    }
+  ]
 }

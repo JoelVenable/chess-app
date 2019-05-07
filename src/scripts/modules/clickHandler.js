@@ -4,6 +4,9 @@ import {
 import {
   showLegalMoves
 } from "./showLegalMoves";
+import {
+  movePiece
+} from "./movePiece";
 
 const chessboard = document.getElementById("board");
 chessboard.addEventListener("click", clickHandler);
@@ -15,8 +18,7 @@ function clickHandler(event) {
     setActivePiece(targetSquare);
     showLegalMoves(targetSquare);
   } else if (containsAvailableMove(targetSquare)) {
-    console.log("Available move");
-    // handleMove(targetSquare);
+    movePiece(targetSquare);
   } else {
     console.log("Invalid move");
     // invalidMove(targetSquare);

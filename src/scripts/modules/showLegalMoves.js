@@ -3,7 +3,7 @@ import {
 } from "./possibleMoves/switchboard";
 import {
   getPieceData
-} from "./possibleMoves/getPieceData";
+} from "./getPieceData";
 
 
 

@@ -18,6 +18,8 @@ function clearBoard() {
 }
 
 function setActiveSquare(squareClicked) {
+  let chessboard = document.getElementById("board");
   let square = document.getElementById(squareClicked);
+  chessboard.setAttribute("data-activesquare-id", squareClicked);
   square.classList.add("active");
 }
