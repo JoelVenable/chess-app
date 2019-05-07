@@ -1,7 +1,9 @@
 import {
   buildDOMElement
 } from "./buildDOMElement";
-
+import {
+  getSquareColor
+} from "./placePieces";
 
 
 drawBoard();
@@ -45,10 +47,18 @@ function makeSquare(i, j, parentRow) {
     ["square", `square-${squareColor}`], {
       "data-algebraicNotation": notation
     });
-  let inner = buildDOMElement("div", square, null, ["square-inner"]);
-  inner.innerHTML = ""; //`x: ${i}<br>y: ${j}`;
+  if (squareColor === "white") square.innerHTML = "&nbsp;";
+  else square.textContent = "+";
+  //`x: ${i}<br>y: ${j}`;
 
 
 
   return square;
 }
+
+module.exports.clearSquare = function (squareID) {
+  let square = document.getElementById(squareID);
+  let squareColor = getSquareColor(squareID);
+  if (squareColor === "white") square.innerHTML = "&nbsp;";
+  else square.innerHTML = "+";
+};

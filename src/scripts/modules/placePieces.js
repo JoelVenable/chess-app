@@ -1,3 +1,7 @@
+import {
+  getFontChar
+} from "./font";
+
 module.exports.placePieces = function (game) {
   clearBoard();
   let chessboard = document.getElementById("board");
@@ -8,14 +12,12 @@ module.exports.placePieces = function (game) {
 };
 
 
-module.exports.placePiece = function (piece, color) {
-  const targetSquare = `square--${piece.x}--${piece.y}`;
-  const square = document.getElementById(targetSquare);
-  const innerDiv = square.querySelector("div");
-  square.classList.add("occupied", `occupied--${color}`);
-  square.setAttribute("data-piece", `${color}--${piece.id}--${piece.type}`);
-  square.setAttribute("data-hasMoved", piece.moved);
-  innerDiv.innerHTML = `${piece.type}<br>${color}`;
+
+
+module.exports.getSquareColor = function (squareID) {
+  let square = document.getElementById(squareID);
+  if (square.classList.contains("square-white")) return "white";
+  else return "black";
 };
 
 function clearBoard() {
@@ -26,3 +28,13 @@ function clearBoard() {
     square.removeAttribute("data-hasmoved");
   });
 }
+
+module.exports.placePiece = function (piece, color) {
+  const targetSquare = `square--${piece.x}--${piece.y}`;
+  const square = document.getElementById(targetSquare);
+  let squareColor = module.exports.getSquareColor(targetSquare);
+  square.innerHTML = getFontChar(piece, color, squareColor);
+  square.classList.add("occupied", `occupied--${color}`);
+  square.setAttribute("data-piece", `${color}--${piece.id}--${piece.type}`);
+  square.setAttribute("data-hasMoved", piece.moved);
+};
