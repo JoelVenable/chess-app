@@ -8,6 +8,7 @@ drawBoard();
 
 
 function drawBoard() {
+
   let fragment = document.createDocumentFragment();
   const board = document.getElementById("board");
 
@@ -30,8 +31,9 @@ function drawBoard() {
 
 
 function makeSquare(i, j, parentRow) {
+  let letters = "abcdefgh".split("");
   let squareColor;
-
+  let notation = `${letters[j]}${8-i}`;
   //  Assign board colors
   if ((i + j) % 2 === 0) squareColor = "white";
   else squareColor = "black";
@@ -40,8 +42,13 @@ function makeSquare(i, j, parentRow) {
     "div",
     parentRow,
     `square--${i}--${j}`,
-    ["square", `square-${squareColor}`]);
+    ["square", `square-${squareColor}`], {
+      "data-algebraicNotation": notation
+    });
   let inner = buildDOMElement("div", square, null, ["square-inner"]);
   inner.innerHTML = ""; //`x: ${i}<br>y: ${j}`;
+
+
+
   return square;
 }
