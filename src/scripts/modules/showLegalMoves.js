@@ -1,6 +1,10 @@
 import {
   pieceSwitchboard
 } from "./possibleMoves/switchboard";
+import {
+  getPieceData
+} from "./possibleMoves/getPieceData";
+
 
 
 module.exports.showLegalMoves = function (squareClicked) {
@@ -16,24 +20,6 @@ module.exports.showLegalMoves = function (squareClicked) {
 
 
 
-
-
-function getPieceData(squareId) {
-  let square = document.getElementById(squareId);
-  let data = square.getAttribute("data-piece").split("--");
-  let hasMoved = square.getAttribute("data-hasMoved");
-  let idSplit = squareId.split("--");
-  return {
-    square: square, // DOM element
-    x: parseInt(idSplit[1]),
-    y: parseInt(idSplit[2]),
-    color: data[0],
-    moved: hasMoved === "true",
-    index: parseInt(data[1]),
-    type: data[2]
-  };
-
-}
 
 
 

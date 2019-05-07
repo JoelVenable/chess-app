@@ -24,31 +24,18 @@ import {
 
 
 module.exports.pieceSwitchboard = function (pieceData) {
-  let outputArray;
   switch (pieceData.type) {
     case "pn":
-      outputArray = pawnMoves(pieceData);
-      break;
-
+      return pawnMoves(pieceData);
     case "kn":
-      outputArray = knightMoves(pieceData); // Bob Seger anyone??
-      break;
-
+      return knightMoves(pieceData); // Bob Seger anyone??
     case "bi":
-      outputArray = bishopMoves(pieceData);
-      break;
-
+      return bishopMoves(pieceData);
     case "rk":
-      outputArray = rookMoves(pieceData);
-      break;
-
+      return rookMoves(pieceData);
     case "qn":
-      outputArray = queenMoves(pieceData);
-      break;
-
-    case "kg":
-      outputArray = kingMoves(pieceData);
-      break;
+      return queenMoves(pieceData);
+    case "ki":
+      return kingMoves(pieceData);
   }
-  return outputArray;
 };

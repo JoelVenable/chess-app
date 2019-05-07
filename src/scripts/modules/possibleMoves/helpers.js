@@ -17,13 +17,36 @@ function makeRectangles(pieceData) {
   let output = [],
     x = pieceData.x,
     y = pieceData.y;
-  for (let i = 0; i < 7; i++) {
-    output.push(getSquare(x + i, y));
-    output.push(getSquare(x - i, y));
-    output.push(getSquare(x, y + i));
-    output.push(getSquare(x, y - i));
+  let quad = [true, true, true, true];
+
+  for (let i = 1; i < 8; i++) {
+    if (quad[0]) {
+      let square = getSquare(x + i, y);
+      quad[0] = !isOccupied(square);
+      output.push(square);
+    }
+    if (quad[1]) {
+      let square = getSquare(x - i, y);
+      quad[1] = !isOccupied(square);
+      output.push(square);
+    }
+    if (quad[2]) {
+      let square = getSquare(x, y + i);
+      quad[2] = !isOccupied(square);
+      output.push(square);
+    }
+    if (quad[3]) {
+      let square = getSquare(x, y - i);
+      quad[3] = !isOccupied(square);
+      output.push(square);
+    }
   }
   return checkSquares(output);
+}
+
+
+function checkStop(square) {
+
 }
 
 
@@ -32,11 +55,31 @@ function makeDiagonals(pieceData) {
   let output = [];
   let x = pieceData.x;
   let y = pieceData.y;
-  for (let i = 0; i < 7; i++) {
-    output.push(getSquare(x + i, y + i));
-    output.push(getSquare(x + i, y - i));
-    output.push(getSquare(x - i, y + i));
-    output.push(getSquare(x - i, y - i));
+  let quad = [true, true, true, true];
+  for (let i = 1; i < 8; i++) {
+    if (quad[0]) {
+      let square = getSquare(x + i, y + i);
+      quad[0] = !isOccupied(square);
+      output.push(square);
+    }
+    if (quad[1]) {
+      let square = getSquare(x + i, y - i);
+
+      quad[1] = !isOccupied(square);
+      output.push(square);
+    }
+    if (quad[2]) {
+      let square = getSquare(x - i, y + i);
+
+      quad[2] = !isOccupied(square);
+      output.push(square);
+    }
+    if (quad[3]) {
+      let square = getSquare(x - i, y - i);
+
+      quad[3] = !isOccupied(square);
+      output.push(square);
+    }
   }
   return checkSquares(output);
 }
