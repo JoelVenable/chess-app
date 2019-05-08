@@ -2,6 +2,6 @@
 
 import {
   drawBoard
-} from "./modules/drawBoard";
-import "./modules/APIinterface";
+} from "./modules/DOM/drawBoard";
+import "./modules/API/APIinterface";
 import "./modules/clickHandler";

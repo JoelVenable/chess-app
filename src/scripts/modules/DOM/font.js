@@ -2,7 +2,7 @@ module.exports.getFontChar = function (piece, color, squareColor) {
   let lookup = `${color}${piece.type}`;
   let char = values[lookup];
 
-  console.log(char);
+
   if (squareColor === "black") char = char.toUpperCase();
   return char;
 };

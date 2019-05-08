@@ -6,7 +6,6 @@ module.exports.buildDOMElement = function (tagName, parentElement, id, classArra
       element.classList.add(cls);
     });
   } catch (e) {
-    console.log("No arguments passed to classArray");
   }
   if (attributesObject) {
     for (const key of Object.keys(attributesObject)) {
