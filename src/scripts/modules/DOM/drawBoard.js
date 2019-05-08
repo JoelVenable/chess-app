@@ -3,7 +3,7 @@ import {
 } from "./buildDOMElement";
 import {
   getSquareColor
-} from "./placePieces";
+} from "../placePieces";
 
 
 drawBoard();

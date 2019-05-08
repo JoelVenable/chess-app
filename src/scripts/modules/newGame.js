@@ -1,6 +1,6 @@
 import {
   API
-} from "./API";
+} from "./API/API";
 import {
   placePieces
 } from "./placePieces";

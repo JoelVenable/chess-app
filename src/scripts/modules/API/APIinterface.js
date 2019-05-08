@@ -3,16 +3,15 @@ import {
 } from "./API";
 import {
   placePieces
-} from "./placePieces";
+} from "../placePieces";
 import {
   makeNewGameData
-} from "./newGame";
+} from "../newGame";
 
 //  Game id is stored in the board's 'data-gameid' attribute
 
 // API.games.read(1)
 //   .then(placePieces);
-
 makeNewGame();
 
 function makeNewGame() {
@@ -27,10 +26,8 @@ function fetchGameData(gameID) {
 
 function updateMove(newPieceObject) {
   let gameID = parseInt(document.getElementById("board").getAttribute("data-gameid"));
-  API.games.update(gameID, newPieceObject).then(pieces => {
-    console.log(pieces);
-    placePieces(pieces);
-  });
+  API.games.update(gameID, newPieceObject)
+  .then(placePieces);
 }
 
 

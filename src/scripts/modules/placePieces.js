@@ -1,6 +1,6 @@
 import {
   getFontChar
-} from "./font";
+} from "./DOM/font";
 
 module.exports.placePieces = function (game) {
   clearBoard();
@@ -23,7 +23,9 @@ module.exports.getSquareColor = function (squareID) {
 function clearBoard() {
   let squares = document.querySelectorAll(".square");
   squares.forEach(square => {
-    square.classList.remove("occupied", "occupied--white", "occupied--black");
+    if (square.classList.contains("square-black")) square.innerHTML = "+";
+    else square.innerHTML = "&nbsp;";
+    square.classList.remove("occupied", "occupied--white", "occupied--black", "available", "active");
     square.removeAttribute("data-piece");
     square.removeAttribute("data-hasmoved");
   });

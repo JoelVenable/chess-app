@@ -6,14 +6,14 @@ import {
 } from "./showLegalMoves";
 import {
   movePiece
-} from "./movePiece";
+} from "./moveHandler/movePiece";
 
 const chessboard = document.getElementById("board");
 chessboard.addEventListener("click", clickHandler);
 
 
 function clickHandler(event) {
-  let targetSquare = getTargetSquare(event);
+  let targetSquare = event.target.id;
   if (containsActiveColorPiece(targetSquare)) {
     setActivePiece(targetSquare);
     showLegalMoves(targetSquare);
@@ -28,15 +28,6 @@ function clickHandler(event) {
 
 
 
-
-function getTargetSquare(event) {
-  let squareClicked = event.target;
-  //  get square clicked, finding the parent if the square-inner is target
-  if (squareClicked.classList.contains("square-inner")) {
-    squareClicked = squareClicked.parentNode;
-  }
-  return squareClicked.id;
-}
 
 function containsActiveColorPiece(square) {
   let activeColor = chessboard.getAttribute("data-turnColor");
